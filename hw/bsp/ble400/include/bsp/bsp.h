@@ -36,9 +36,19 @@ extern "C" {
 extern uint8_t _ram_start;
 #define RAM_SIZE        0x8000
 
+/* key switches */
+#define KEY_1           (16)
+#define KEY_2           (17)
+
 /* LED pins */
-#define LED_BLINK_PIN   (18)
-#define LED_2           (19)
+
+#define LED_0           (18)
+#define LED_1           (19)
+#define LED_2           (20)
+#define LED_3           (21)
+#define LED_4           (22)
+
+#define LED_BLINK_PIN   LED_0 
 
 /* UART info */
 #define CONSOLE_UART            "uart0"

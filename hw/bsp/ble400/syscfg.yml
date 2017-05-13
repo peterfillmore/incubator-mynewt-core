@@ -55,6 +55,16 @@ syscfg.defs:
     SPI_0_MASTER:
         description: 'SPI 0 master'
         value:  0
+    SPI_0_MASTER_SCK_PIN:
+        description: 'SPI 0 SCK'
+        value: 25
+    SPI_0_MASTER_MOSI_PIN:
+        description: 'SPI 0 MOSI'
+        value: 24
+    SPI_0_MASTER_MISO_PIN:
+        description: 'SPI 0 MISO'
+        value: 23
+     
     SPI_0_MASTER_SS_PIN:
         description: 'SPI 0 (master) SS pin number.'
         value:  30
@@ -88,6 +98,25 @@ syscfg.defs:
     I2C_0:
         description: 'NRF51 I2C (TWI) interface 0'
         value:  '0'
+    I2C_0_SCL_PIN:
+        description: 'NRF51 SCL PIN'
+        value: '1'
+    I2C_0_SDA_PIN:
+        description: 'NRF51 SDA PIN'
+        value: '0'
+    I2C_0_FREQUENCY:
+        description: 'I2C Frequency'
+        value: '100'
+    I2C_0_SMBA:
+        description: 'I2C SMBA PIN'
+        value: '2'
+
+    KEY_1:
+        description: 'Key Switch 1'
+        value: '16'
+    KEY_2:
+        description: 'Key Switch 2'
+        value: '17'
 
 syscfg.vals:
     CONFIG_FCB_FLASH_AREA: FLASH_AREA_NFFS

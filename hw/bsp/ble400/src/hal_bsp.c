@@ -50,9 +50,9 @@ static const struct nrf51_uart_cfg os_bsp_uart0_cfg = {
  * and is handled outside the SPI routines.
  */
 static const struct nrf51_hal_spi_cfg os_bsp_spi0m_cfg = {
-    .sck_pin      = 25,
-    .mosi_pin     = 24,
-    .miso_pin     = 23
+    .sck_pin      = MYNEWT_VAL(SPI_0_MASTER_SCK_PIN),
+    .mosi_pin     = MYNEWT_VAL(SPI_0_MASTER_MOSI_PIN),
+    .miso_pin     = MYNEWT_VAL(SPI_0_MASTER_MISO_PIN)
 };
 #endif
 
@@ -67,9 +67,9 @@ static const struct nrf51_hal_spi_cfg os_bsp_spi1s_cfg = {
 
 #if MYNEWT_VAL(I2C_0)
 static const struct nrf51_hal_i2c_cfg hal_i2c_cfg = {
-    .scl_pin = 1,
-    .sda_pin = 0,
-    .i2c_frequency = 100    /* 100 kHz */
+    .scl_pin = MYNEWT_VAL(I2C_0_SCL_PIN),
+    .sda_pin = MYNEWT_VAL(I2C_0_SDA_PIN),
+    .i2c_frequency = MYNEWT_VAL(I2C_0_FREQUENCY)    /* 100 kHz */
 };
 #endif
 
